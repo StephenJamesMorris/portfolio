@@ -1,1 +1,59 @@
+@import './variables.css';
+@import './print.css';
 
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--surface-color);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Components */
+.job-card, .project-card {
+  background: var(--surface-color);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+}
+
+.metric-highlight {
+  color: var(--accent);
+  font-weight: bold;
+  font-family: var(--font-mono);
+  margin: 0.5rem 0;
+}
+
+.tech-tags span {
+  background: var(--bg-color);
+  border: 1px solid var(--text-secondary);
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+/* Utilities */
+.skeleton-text { opacity: 0.5; }
+.lang-switch button.active { font-weight: bold; text-decoration: underline; }
+button { cursor: pointer; background: none; border: none; color: var(--text-primary); font: inherit; }
