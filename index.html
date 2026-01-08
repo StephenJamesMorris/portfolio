@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Senior Frontend Architect Portfolio" />
+    <title>Portfolio | Senior Architect</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body>
+    <nav class="no-print">
+      <div class="nav-controls">
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">◑</button>
+        <div class="lang-switch">
+          <button id="btn-en">EN</button>
+          <button id="btn-de">DE</button>
+        </div>
+      </div>
+      <button onclick="window.print()" data-i18n="nav.print" class="btn-primary">Print PDF</button>
+    </nav>
 
+    <main id="app">
+      <header id="hero">
+        <h1 data-i18n="profile.headline" class="skeleton-text">Loading...</h1>
+        <p data-i18n="profile.summary" class="skeleton-text">Loading...</p>
+      </header>
+
+      <section>
+        <h2 data-i18n="section_titles.experience">Experience</h2>
+        <div id="experience-list" class="grid-list"></div>
+      </section>
+
+      <section>
+        <h2 data-i18n="section_titles.projects">Projects</h2>
+        <div id="projects-grid" class="grid-cols"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
