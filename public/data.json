@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "contact": { "email": "sjmorris@duck.com", "github": "github.com/StephenJamesMorris" }
+  },
+  "content": {
+    "de": {
+      "nav": { "print": "🖨️ PDF Speichern" },
+      "profile": {
+        "headline": "Senior Frontend Architect",
+        "summary": "Spezialisiert auf Performance und skalierbare UIs."
+      },
+      "section_titles": { "experience": "Berufserfahrung", "projects": "Projekte" },
+      "experience": [
+        { 
+          "role": "Senior Engineer", 
+          "company": "Tech Corp", 
+          "period": "2021-Heute", 
+          "achievements": ["Ladezeit um 40% reduziert.", "Teamleitung."] 
+        }
+      ],
+      "projects": [
+        {
+          "title": "Analytics Dashboard",
+          "description": "High-Performance Dashboard.",
+          "metric": "Verarbeitet 10k Events/Sekunde",
+          "tech": ["TypeScript", "D3"]
+        }
+      ]
+    },
+    "en": {
+      "nav": { "print": "🖨️ Save as PDF" },
+      "profile": {
+        "headline": "Senior Frontend Architect",
+        "summary": "Specialized in performance and scalable UIs."
+      },
+      "section_titles": { "experience": "Experience", "projects": "Projects" },
+      "experience": [
+        { 
+          "role": "Senior Engineer", 
+          "company": "Tech Corp", 
+          "period": "2021-Present", 
+          "achievements": ["Reduced load time by 40%.", "Team leadership."] 
+        }
+      ],
+      "projects": [
+        {
+          "title": "Analytics Dashboard",
+          "description": "High-Performance Dashboard.",
+          "metric": "Handles 10k events/sec",
+          "tech": ["TypeScript", "D3"]
+        }
+      ]
+    }
+  }
+}
