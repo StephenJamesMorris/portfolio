@@ -88,7 +88,8 @@ my-portfolio/
 ├── README.md                     # Documentation
 └── vite.config.js
 ```
-**Create the File Scructure**
+## Create the File Scructure
+**bash**
 ```bash
 # 1. Create the directory structure (-p creates parent folders automatically)
 mkdir -p my-portfolio/{.github/workflows,public/assets,src/css,src/js}
@@ -102,4 +103,39 @@ touch my-portfolio/{.gitignore,index.html,package.json,README.md,vite.config.js}
 
 # 3. Confirmation message
 echo "✅ Project structure successfully created in 'my-portfolio/'"
+```
+
+**PowerShell**
+```powershell
+
+# 1. Create Directories
+# PowerShell allows comma-separated paths. -Force ensures parents are created.
+$dirs = "my-portfolio/.github/workflows",
+        "my-portfolio/public/assets",
+        "my-portfolio/src/css",
+        "my-portfolio/src/js"
+
+New-Item -ItemType Directory -Path $dirs -Force | Out-Null
+
+# 2. Create Files
+# We must expand the file paths manually as PS lacks {a,b} syntax.
+$files = "my-portfolio/.github/workflows/deploy.yml",
+         "my-portfolio/public/data.json",
+         "my-portfolio/public/favicon.svg",
+         "my-portfolio/src/css/variables.css",
+         "my-portfolio/src/css/main.css",
+         "my-portfolio/src/css/print.css",
+         "my-portfolio/src/js/language.js",
+         "my-portfolio/src/js/main.js",
+         "my-portfolio/.gitignore",
+         "my-portfolio/index.html",
+         "my-portfolio/package.json",
+         "my-portfolio/README.md",
+         "my-portfolio/vite.config.js"
+
+New-Item -ItemType File -Path $files -Force | Out-Null
+
+# 3. Confirmation
+Write-Host "✅ Project structure successfully created in 'my-portfolio/'" -ForegroundColor Green
+
 ```
